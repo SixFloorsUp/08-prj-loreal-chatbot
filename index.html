@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,6 +19,14 @@
     <div class="page-wrapper">
       <!------- Header / Branding ------->
       <header class="site-header">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <span class="material-icons">dark_mode</span>
+        </button>
+        <img src="img/loreal-logo.png" alt="L'Oreal Logo" class="site-logo" />
         <h1 class="site-title">Smart Product Advisor</h1>
       </header>
 
@@ -49,18 +57,17 @@
 
       <!------- Footer Links ------->
       <footer class="site-footer">
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
+        <p>&copy; 2026 L'Oréal. All rights reserved.</p>
         <nav>
-          <!-- These URLs are placeholders -->
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Contact</a>
+          <!-- Replace the href URLs below with your actual links -->
+          <a href="https://www.loreal.com/en/group/global-privacy-policy/" target="_blank">Privacy Policy</a>
+          <a href="https://www.loreal.com/en/group/global-terms-of-use/" target="_blank">Terms of Use</a>
+          <a href="https://www.loreal.com/en/usa/articles/contact-us/" target="_blank">Contact</a>
         </nav>
       </footer>
     </div>
 
-    <!-- secrets.js can be removed when using Cloudflare Workers for API requests -->
-    <script src="secrets.js"></script>
+    <!-- secrets.js removed - API key is now securely stored in Cloudflare Worker -->
     <script src="script.js"></script>
   </body>
 </html>
